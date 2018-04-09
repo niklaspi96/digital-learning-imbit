@@ -57,11 +57,12 @@
 	</div>
 	<div class="center mainWindow" data-options="region:'center'"
 		align="center" style="padding-left: 2%; padding-right: 2%">
+		//alignment changed to center for the whole content-area
 		<div id="studentsOfProfessor">
 			<h1>Lecturer Page</h1>
 			<div class="separator-box" style="padding-bottom: 30px">
-				<div
-					style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
+				//width changed to 90% for content-area with 5% padding left and right
+				<div style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
 					<div id="groupsOfProfessor"
 						style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%">
 						<h4>Groups</h4>
@@ -223,16 +224,21 @@
 				<div style="width: 50%; float: left; padding-left: 5%">
 					<h4 title="The following information is required for the certificate.">Create New Group</h4>
 					<form action="NewUsergroup" method="post">
+					//button-width and input field width is larger now
 						<div class="formLabel">Name:</div>
+						//tool tip that no blank characters are allowed
 						<input style="width: 55%" type="text" name="groupname" maxlength="50" placeholder="No blank characters allowed!" required /><br />
 						<br />
 						<div class="formLabel">Organisation:</div>
+						//value for the input field pre-defined
 						<input style="width: 55%" type="text" name="grouporg" maxlength="50" value="DHBW Mannheim" required /><br />
 						<br />
 						<div class="formLabel">Description:</div>
+						//value for the input field pre-defined
 						<input style="width: 55%" type="text" name="groupdescription" maxlength="50" value="IMBIT Serious Games" required /><br />
 						<br />
 						<div class="formLabel">URL:</div>
+						//value for the input field pre-defined
 						<input style="width: 55%" type="text" name="groupurl" maxlength="50" value="www.dhbw-mannheim.de" required /> <input
 							type="submit" style="display: none; width: 100%" id="createGroup"
 							value="Create group" /><br /> <br /> <a
@@ -242,6 +248,7 @@
 						<p style="color: red">${error}</p>
 					</form>
 				</div>
+				//button-width and input field width is larger now
 				<div style="margin-left: 50%; padding-left: 5%">
 					<h4>Change Lecturer Password</h4>
 					<form action="ResetPassword" method="post">
