@@ -60,6 +60,7 @@
 			<div class="welcome"></div>
 		</div>
 	</div>
+	//page alignment changed to center
 	<div class="center" data-options="region:'center'" align="center" style="padding-left: 2%; padding-right: 2%">
 		<h3>Welcome to brillianCRM</h3>
 		<p>Please fill in the form below and hit the send button to
@@ -70,6 +71,7 @@
 
 		<form action="SendRegistrationLink" method="post">
 			<input type="text" name="link" maxlength="5000" value="${link}" style="display: none" />
+			//input field made bigger and displays up to 10 rows now
 			<textarea type="email" NAME="email" cols="75" ROWS="10" style="width: 400px; height: 150px" placeholder="Please fill in only valid e-mail adresses."></textarea>
 			<br />
 			<input id="sendRegistration" style="display: none" type="submit"
