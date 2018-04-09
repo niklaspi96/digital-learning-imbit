@@ -57,6 +57,7 @@
 			<a id="imprint" class="easyui-linkbutton" data-options="plain:true"><%=ApplicationConstants.IMPRINT_BUTTON_TEXT%></a>
 		</div>
 	</div>
+	//alignment changed to center for the whole content-area
 	<div class="center mainWindow" data-options="region:'center'" align="center" style="padding-left: 2%; padding-right: 2%">
 		<h1>Admin Page</h1>
 		<div style="text-align: left; padding-left: 5%; padding-right: 5%" align="center">
@@ -116,6 +117,7 @@
 					<form action="CreateUser" method="post">
 						<input type="text" name="role" maxlength="50" value="professor"
 							style="display: none" />
+						//button-width and input field width is larger now
 						<div class="formLabel">Title</div>
 						<select name="gender" id="gender" size="1" style="width: 55%"
 							required>
@@ -151,6 +153,7 @@
 					<h4>Change Password</h4>
 					<p style="color: red; padding-left: 32px;">${error}</p>
 					<form action="ResetPassword" method="post">
+					//button-width and input field width is larger now
 						<input type="text" name="role" maxlength="50" value="admin"
 							style="display: none; width: 55%" />
 						<!--  Password check -->
