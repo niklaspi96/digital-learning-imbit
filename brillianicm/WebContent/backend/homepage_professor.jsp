@@ -61,8 +61,8 @@
 		<div id="studentsOfProfessor">
 			<h1>Lecturer Page</h1>
 			<div class="separator-box" style="padding-bottom: 30px">
-				<div
-					style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
+			//changed alignment to center w/ 90% width and 5% padding left and right
+				<div style="width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black">
 					<div id="groupsOfProfessor"
 						style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%; padding-bottom:20px">
 						<h4>Groups</h4>
@@ -255,26 +255,31 @@
 				</div>
 			</div>
 
-
-			<div
-				style="height: 270px; text-align: left; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 2%">
+			//height 270px and width 90% w/ 5% padding left and right
+			//information for the certificates which can be sent out
+			<div style="height: 270px; text-align: left; width: 90%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-bottom: 2%">
 				<div style="width: 50%; float: left; padding-left: 5%">
 					<h4 title="The following information is required for the certificate.">Create New Group</h4>
 					<form action="NewUsergroup" method="post">
 						<div class="formLabel">Name:</div>
+						//pre-defined value and bigger input field
 						<input style="width: 55%" type="text" name="groupname" maxlength="50" placeholder="No blank characters allowed!" required /><br />
 						<br />
 						<div class="formLabel">Organisation:</div>
+						//pre-defined value and bigger input field
 						<input style="width: 55%" type="text" name="grouporg" maxlength="50" value="DHBW Mannheim" required /><br />
 						<br />
 						<div class="formLabel">Description:</div>
+						//pre-defined value and bigger input field
 						<input style="width: 55%" type="text" name="groupdescription" maxlength="50" value="IMBIT Serious Games" required /><br />
 						<br />
 						<div class="formLabel">URL:</div>
+						//pre-defined value and bigger input field
 						<input style="width: 55%" type="text" name="groupurl" maxlength="50" value="www.dhbw-mannheim.de" required /> <input
 							type="submit" style="display: none" id="createGroup"
-							value="Create group" /><br /> <br /> <a
-							class="easyui-linkbutton" style="width: 50%"
+							value="Create group" /><br /> <br /> 
+							//bigger button
+							<a class="easyui-linkbutton" style="width: 50%"
 							onclick="$('#createGroup').trigger('click')">Create Group</a>
 						<p style="color: green">${success}</p>
 						<p style="color: red">${error}</p>
@@ -287,12 +292,15 @@
 							value="${username}" style="display: none" /> <input type="text"
 							name="role" maxlength="50" value="professor"
 							style="display: none" />
-						<div class="formLabel" style="padding-right: 20px">New
-							Password:</div>
+							//bigger input field
+						<div class="formLabel" style="padding-right: 20px">
+						New Password:</div>
 						<input style="width: 55%" type="password" name="password"
 							maxlength="50" /><br /> <br />
+							//bigger input field
 						<div class="formLabel" style="padding-right: 20px">Repeat
 							New Password:</div>
+							//bigger button
 						<input style="width: 55%" type="password" name="password_repeat"
 							maxlength="50" /><br /> <br /> <input id="updatePassword"
 							type="submit" name="updatePassword" value="Update password"
